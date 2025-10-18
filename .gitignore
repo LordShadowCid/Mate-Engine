@@ -75,3 +75,20 @@ Assets/AssetStoreTools*
 Assets/Example Avatar - USED FOR MATE ENGINE
 ProjectSettings/Packages
 UserSettings/Layouts
+
+# Local config secrets (do not commit)
+Assets/StreamingAssets/mateengine.json
+
+# Node/JS tooling and local env
+node_modules/
+**/node_modules/
+**/.vite/
+**/dist/
+**/build/
+**/.env
+**/.env.local
+**/.env.*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*

@@ -165,14 +165,23 @@ public class SaveLoadHandler : MonoBehaviour
 
         public Dictionary<string, bool> modStates = new();
         public int graphicsQualityLevel = 1;
-        public Dictionary<string, bool> accessoryStates = new();
+    public Dictionary<string, bool> accessoryStates = new();
 
-        public bool startWithWindows = false;
-        public bool enableRandomMessages = false;
+    public bool startWithWindows = false;
+    public bool enableRandomMessages = false;
 
-        public string selectedModelPath = "";
-        public int contextLength = 4096;
-        public bool enableHusbandoMode = false;
+    public string selectedModelPath = "";
+    public int contextLength = 4096;
+    public bool enableHusbandoMode = false;
+
+    // Consent & privacy flags
+    public bool consentShown = false; // First-use onboarding shown
+    public int consentVersion = 1;    // Bump when consent copy or scopes change
+    public bool allowMicrophone = false;
+    public bool allowScreenCapture = false;
+    public bool allowGoogleAccess = false;
+    public bool allowWebcam = false;
+    public bool allowBackgroundLogging = false; // for self-learning basics
     }
 
     public static void SyncAllowedAppsToAllAvatars()

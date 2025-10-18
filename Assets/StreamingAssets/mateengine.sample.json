@@ -1,0 +1,31 @@
+{
+  "environment": "dev",
+  "google": {
+    "clientId": "",
+    "clientSecret": "",
+    "scopes": [
+      "https://www.googleapis.com/auth/gmail.readonly",
+      "https://www.googleapis.com/auth/gmail.send",
+      "https://www.googleapis.com/auth/contacts.readonly",
+      "https://www.googleapis.com/auth/calendar.readonly",
+      "https://www.googleapis.com/auth/calendar.events"
+    ]
+  },
+  "voice": {
+    "provider": "windows",
+    "sttProvider": "windows",
+    "ttsProvider": "windows"
+  },
+  "ocr": {
+    "provider": "windows"
+  },
+  "livekit": {
+    "url": "wss://your-livekit-host",
+    "token": "",
+    "room": "",
+    "identity": "",
+    "tokenEndpoint": "",
+    "apiKey": "",
+    "apiSecret": ""
+  }
+}
